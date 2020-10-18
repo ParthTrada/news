@@ -1,0 +1,17 @@
+{% extends "entries/basee.html" %}
+
+{% block content %} 
+
+      <div class="col-md-8">
+        <div class="card mb-4 mt-4">
+          <div class="card-body">
+            <h2 class="card-title">{{ object.title }}</h2>
+            <p class="card-text">{{ object.text }}</p>
+          </div>
+          <div class="card-footer text-muted">
+            Posted on {{ object.date }} by {{ object.author }}
+          </div>
+        </div>
+
+      </div>
+{% endblock %}
